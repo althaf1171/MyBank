@@ -9,20 +9,20 @@
 		</headerContent>
 
 		<content>
+			<!-- Bank Details fragment -->
 			<core:Fragment fragmentName="mybank.view.Fragments.BankDetails" type="XML" />
 
-			<Button id="Btn2" type="Neutral" text="{i18n>Btn2}" class="sapUiSmallMarginBegin" press=".onOpenBankDetails"/>
 		</content>
-
-		<Panel id="p1" expandable="true" headerText="{i18n>PHT}" width="auto" class="sapUiResponsiveMargin">
+			<!-- Pannel For Card Details -->
+		<Panel id="p2" expandable="true" headerText="{i18n>PHT}" width="auto" class="sapUiResponsiveMargin">
 			<content>
 				<List id="myList" items="">
 					<items>
-						<StandardListItem id="SL1" title="{i18n>SL1}" description="{i18n>SL1D}" icon="sap-icon://credit-card" iconInset="false" highlight="Success" info="{i18n>Info1}" infoState="Information" infoStateInverted="true" />
+						<StandardListItem id="SL1" title="Master Card (12345678901243)" description="Debit card: Assigned on 23 Aug 2017" icon="sap-icon://credit-card" iconInset="false" highlight="Information" info="{i18n>Info1}" infoState="Information" infoStateInverted="true" />
 
-						<StandardListItem id="SL2" title="{i18n>SL2}" description="{i18n>SL2D}" icon="sap-icon://credit-card" iconInset="false" highlight="Warning" info="{i18n>Info2}" infoState="Warning" infoStateInverted="true" />
+						<StandardListItem id="SL2" title="Visa (1234567854345)" description="Credit card: Assigned on 20 Oct 2020" icon="sap-icon://credit-card" iconInset="false" highlight="Error" info="{i18n>Info2}" infoState="Error" infoStateInverted="true" />
 
-						<StandardListItem id="SL3" title="{i18n>SL3}" description="{i18n>SL3D}" icon="sap-icon://credit-card" iconInset="false" highlight="Error" info="{i18n>Info3}" infoState="Error" infoStateInverted="true" />
+						<StandardListItem id="SL3" title="Master card (1236578954637)" description="Debit Card: Assigned on 22 Aug 2017" icon="sap-icon://credit-card" iconInset="false" highlight="Success" info="{i18n>Info3}" infoState="Success" infoStateInverted="true" />
 					</items>
 				</List>
 			</content>

@@ -1,28 +1,36 @@
 <core:FragmentDefinition xmlns="sap.m"
     xmlns:core="sap.ui.core">
 
-    <VBox id="vBox1" class="sapUiSmallMargin">
+    <Panel id="p1" expandable="false" headerText="{i18n>ADetails}" width="auto" class="sapUiResponsiveMargin">
+        <content>
+            <HBox id="AvatarBox">
+                <Avatar id="Avatar" src="" displaySize="XL" showBorder="true" press="onPress"/>
 
-        <Title text="{i18n>ADetails}" id="accDetails" level="H1"/>
+                <VBox id="vBox1" class="sapUiSmallMargin sapUiLargeMarginBegin">
 
-        <HBox id="hBox1">
-            <Label id="LbBAN" text="{i18n>AcNo}" class="sapUiSmallMarginEnd"/>
-            <Text id="accNum" text="90105674*************"/>
-        </HBox>
+                    <Title text="{i18n>ADetails}" id="accDetails" level="H1"/>
 
-        <HBox id="hBox2">
-            <Label id="LbAHN" text="{i18n>AHN}" class="sapUiSmallMarginEnd"/>
-            <Text id="accHNum" text="Althaf Sheik"/>
-        </HBox>
+                    <HBox id="hBox1">
+                        <Label id="LbBAN" text="{i18n>AcNo}" class="sapUiSmallMarginEnd"/>
+                        <Text id="accNum" text="90105674*************"/>
+                    </HBox>
 
-        <HBox id="hBox3">
-            <Label id="LbIFSC" text="{i18n>IFSC}" class="sapUiSmallMarginEnd"/>
-            <Text id="IFSC" text="SBIN000***"/>
-        </HBox>
+                    <HBox id="hBox2">
+                        <Label id="LbAHN" text="{i18n>AHN}" class="sapUiSmallMarginEnd"/>
+                        <Text id="accHNum" text="Althaf Sheik"/>
+                    </HBox>
+
+                    <HBox id="hBox3">
+                        <Label id="LbIFSC" text="{i18n>IFSC}" class="sapUiSmallMarginEnd"/>
+                        <Text id="IFSC" text="SBIN000***"/>
+                    </HBox>
+                    <Button id="Btn2" type="Neutral" text="{i18n>Btn2}" press=".onOpenBankDetails"/>
 
 
-    </VBox>
-
+                </VBox>
+            </HBox>
+        </content>
+    </Panel>
 
 
 </core:FragmentDefinition>
