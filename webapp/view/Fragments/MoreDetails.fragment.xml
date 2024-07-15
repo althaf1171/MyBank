@@ -1,0 +1,55 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+
+<Dialog id="idMoreDetails" title="{i18n>ConfDetail}">
+
+<VBox id="vBoxa" class="sapUiSmallMargin">
+
+<HBox id="hBox11">
+<Label id="LbBAN1" text="{i18n>AcNo}" class="sapUiSmallMarginEnd"/>
+<Text id="accNum1" text="90105674*************"/>
+
+</HBox>
+
+<HBox id="hBoxb">
+            <Label id="LbAHN1" text="{i18n>AHN}" class="sapUiSmallMarginEnd"/>
+            <Text id="accHNum1" text="Althaf Sheik"/>
+        </HBox>
+
+        <HBox id="hBoxc">
+            <Label id="LbIFSC1" text="{i18n>IFSC}" class="sapUiSmallMarginEnd"/>
+            <Text id="IFSC1" text="SBIN000***"/>
+        </HBox>
+
+        <HBox id="hBoxd">
+            <Label id="LbBR1" text="{i18n>Branch}" class="sapUiSmallMarginEnd"/>
+            <Text id="idBranch1" text="HYD"/>
+        </HBox>
+
+        <HBox id="hBoxe">
+            <Label id="LbCon1" text="{i18n>Country}" class="sapUiSmallMarginEnd"/>
+            <Text id="idCountry1" text="INDIA"/>
+        </HBox>
+
+        <HBox id="hBoxf">
+            <Label id="LCuId" text="{i18n>CustId}" class="sapUiSmallMarginEnd"/>
+            <Text id="idCustId" text="1171***"/>
+        </HBox>
+
+        <HBox id="hBoxg">
+            <Label id="LAdd" text="{i18n>Add}" class="sapUiSmallMarginEnd"/>
+            <Text id="idAdd" text="Abc/****/*****/******/***"/>
+        </HBox>
+</VBox>
+
+    <beginButton>
+
+    <Button id="bBtn" text="{i18n>Btn3}" press=".onCloseBtn"/>
+
+    </beginButton>
+
+</Dialog>
+
+
+</core:FragmentDefinition>

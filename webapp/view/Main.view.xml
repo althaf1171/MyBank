@@ -1,0 +1,31 @@
+<mvc:View controllerName="mybank.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<Page id="page" title="{i18n>title}">
+
+		<headerContent>
+			<Button id="Btn1" type="Emphasized" text="{i18n>Btn1}"/>
+		</headerContent>
+
+		<content>
+			<core:Fragment fragmentName="mybank.view.Fragments.BankDetails" type="XML" />
+
+			<Button id="Btn2" type="Neutral" text="{i18n>Btn2}" class="sapUiSmallMarginBegin" press=".onOpenBankDetails"/>
+		</content>
+
+		<Panel id="p1" expandable="true" headerText="{i18n>PHT}" width="auto" class="sapUiResponsiveMargin">
+			<content>
+				<List id="myList" items="">
+					<items>
+						<StandardListItem id="SL1" title="{i18n>SL1}" description="{i18n>SL1D}" icon="sap-icon://credit-card" iconInset="false" highlight="Success" info="{i18n>Info1}" infoState="Information" infoStateInverted="true" />
+
+						<StandardListItem id="SL2" title="{i18n>SL2}" description="{i18n>SL2D}" icon="sap-icon://credit-card" iconInset="false" highlight="Warning" info="{i18n>Info2}" infoState="Warning" infoStateInverted="true" />
+
+						<StandardListItem id="SL3" title="{i18n>SL3}" description="{i18n>SL3D}" icon="sap-icon://credit-card" iconInset="false" highlight="Error" info="{i18n>Info3}" infoState="Error" infoStateInverted="true" />
+					</items>
+				</List>
+			</content>
+		</Panel>
+	</Page>
+</mvc:View>
